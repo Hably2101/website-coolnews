@@ -1,0 +1,112 @@
+/* ===== Reset Dasar ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #C9B9B3;
+  padding: 1rem 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.user-options {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-btn {
+  background-color: white;
+  color: #9c8a9e;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.logo {
+  flex: 1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  flex: 2;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3 ease;
+}
+
+.menu li a:hover {
+  color: #444;
+}
+
+/* Headline */
+.headline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Card Berita */
+.news-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.news-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-item p {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.news-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-item a:hover {
+  color: #555;
+}
